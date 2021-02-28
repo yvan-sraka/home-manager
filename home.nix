@@ -22,10 +22,12 @@
   home.packages = [
     pkgs.htop
     pkgs.neovim
+    pkgs.nodejs
     pkgs.pandoc
     pkgs.pipenv
     pkgs.tree
     pkgs.wget
+    pkgs.yarn
   ];
 
   programs.direnv = {
