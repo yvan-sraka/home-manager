@@ -19,5 +19,9 @@
   # changes in each release.
   home.stateVersion = "21.05";
 
-  home.packages = [];
+  home.packages = [
+    pkgs.htop
+    pkgs.tree
+    pkgs.wget
+  ];
 }
