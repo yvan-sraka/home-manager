@@ -21,6 +21,7 @@
 
   home.packages = [
     pkgs.htop
+    pkgs.neovim
     pkgs.tree
     pkgs.wget
   ];
