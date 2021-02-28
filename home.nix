@@ -23,6 +23,7 @@
     pkgs.htop
     pkgs.neovim
     pkgs.pandoc
+    pkgs.pipenv
     pkgs.tree
     pkgs.wget
   ];
