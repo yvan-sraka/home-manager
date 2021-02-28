@@ -26,4 +26,9 @@
     pkgs.tree
     pkgs.wget
   ];
+
+  programs.direnv = {
+    enable = true;
+    enableNixDirenvIntegration = true;
+  };
 }
