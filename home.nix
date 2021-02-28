@@ -25,6 +25,7 @@
     pkgs.nodejs
     pkgs.pandoc
     pkgs.pipenv
+    pkgs.pass
     pkgs.tree
     pkgs.wget
     pkgs.yarn
