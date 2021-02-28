@@ -22,6 +22,7 @@
   home.packages = [
     pkgs.htop
     pkgs.neovim
+    pkgs.pandoc
     pkgs.tree
     pkgs.wget
   ];
