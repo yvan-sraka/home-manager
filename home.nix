@@ -35,4 +35,6 @@
     enable = true;
     enableNixDirenvIntegration = true;
   };
+
+  home.file.".gitconfig".source = ./.gitconfig;
 }
