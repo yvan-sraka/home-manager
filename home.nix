@@ -20,8 +20,15 @@
   home.stateVersion = "21.05";
 
   home.packages = [
+    (pkgs.neovim.override {
+      configure = {
+        packages.myPlugins = with pkgs.vimPlugins; {
+          start = [ editorconfig-vim vim-airline vim-lastplace vim-nix ];
+          opt = [ ];
+        };
+      };
+    })
     pkgs.htop
-    pkgs.neovim
     pkgs.nodejs
     pkgs.pandoc
     pkgs.pipenv

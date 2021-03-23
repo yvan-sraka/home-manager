@@ -15,3 +15,8 @@ export WASMER_DIR="$HOME/.wasmer"
 # wasmtime
 export WASMTIME_HOME="$HOME/.wasmtime"
 export PATH="$WASMTIME_HOME/bin:$PATH"
+
+# neovim
+export EDITOR=nvim
+alias vi=nvim
+alias vim=nvim
