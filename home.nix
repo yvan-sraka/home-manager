@@ -36,12 +36,20 @@
     enableNixDirenvIntegration = true;
   };
 
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
+    enableAutosuggestions = true;
+    history = { save = 1000; };
     envExtra = builtins.readFile ./.zshenv;
-    # wget -O grml.zsh http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
-    initExtraBeforeCompInit = builtins.readFile ./grml.zsh;
+    initExtraBeforeCompInit = ''
+      source ${pkgs.grml-zsh-config}/etc/zsh/zshrc
+    '';
   };
 
   home.file.".gitconfig".text = ''
