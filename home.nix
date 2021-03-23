@@ -19,6 +19,8 @@
   # changes in each release.
   home.stateVersion = "21.05";
 
+  # List packages installed in home-manager profile. To search, run:
+  # $ nix search wget
   home.packages = [
     (pkgs.neovim.override {
       configure = {
@@ -29,10 +31,14 @@
       };
     })
     pkgs.htop
+    pkgs.mosh
+    pkgs.most
     pkgs.nodejs
     pkgs.pandoc
     pkgs.pipenv
     pkgs.pass
+    pkgs.taskwarrior
+    pkgs.tmux
     pkgs.tree
     pkgs.wget
     pkgs.yarn
