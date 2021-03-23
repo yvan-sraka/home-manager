@@ -44,5 +44,20 @@
     initExtraBeforeCompInit = builtins.readFile ./grml.zsh;
   };
 
-  home.file.".gitconfig".source = ./.gitconfig;
+  home.file.".gitconfig".text = ''
+    [user]
+      name = Yvan Sraka
+      email = yvan@sraka.xyz
+    [core]
+      editor = nvim
+    [pull]
+      ff = only
+    [init]
+      defaultBranch = main
+    [filter "lfs"]
+      process = git-lfs filter-process
+      required = true
+      clean = git-lfs clean -- %f
+      smudge = git-lfs smudge -- %f
+      '';
 }
