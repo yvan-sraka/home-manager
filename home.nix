@@ -87,4 +87,9 @@
       clean = git-lfs clean -- %f
       smudge = git-lfs smudge -- %f
       '';
+
+  programs.browserpass = {
+    enable = true;
+    browsers = [ "chrome" "firefox" ];
+  };
 }
