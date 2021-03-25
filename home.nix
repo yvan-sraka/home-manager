@@ -33,6 +33,7 @@
     pkgs.htop
     pkgs.mosh
     pkgs.most
+    pkgs.nixfmt
     pkgs.nodejs
     pkgs.pandoc
     pkgs.pipenv
