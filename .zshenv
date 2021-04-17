@@ -20,3 +20,7 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 export EDITOR=nvim
 alias vi=nvim
 alias vim=nvim
+
+# OpenJDK
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
