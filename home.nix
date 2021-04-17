@@ -30,6 +30,7 @@
         };
       };
     })
+    pkgs.glow
     pkgs.htop
     pkgs.mosh
     pkgs.most
